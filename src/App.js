@@ -11,10 +11,11 @@ function App() {
     }
     return (
       <div className="App">
+        <ColorForm addColor={addColor} />
         {colors.map((color, i) =>
-        <ColorBlock key= 'i' color={color} />
-        //  <ColorForm addColor={addColor} />
-        )}
+        <ColorBlock key= {i} color={color} />
+      
+    )}
       </div>
     )
 }
